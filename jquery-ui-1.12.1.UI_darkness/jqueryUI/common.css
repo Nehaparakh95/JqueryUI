@@ -1,0 +1,45 @@
+#resizeMe {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+}
+
+#resizeMe input{
+    width: 100px;
+    height: 50px;
+}
+
+.dragMe{
+    width: 50px;
+    height: 50px;
+    border: 1px solid blue;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    z-index: 100;
+    padding-right: 10px;
+}
+.dragMe2{
+    width: 50px;
+    height: 50px;
+    border: 1px solid blue;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    z-index: 103;
+    
+}
+
+#target {
+    width: 200px;
+    height: 50px;
+    border: 1px solid red;
+    text-align: center;
+    /* position: absolute; */
+    left: 500px;
+    top: 100px;
+    z-index: 0;
+}
+.align{
+    display: flex
+}
