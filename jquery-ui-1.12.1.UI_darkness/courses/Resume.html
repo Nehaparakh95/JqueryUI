@@ -1,0 +1,73 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet"
+          type="text/css"
+          href="/jqueryUI/jquery-ui.min.css" />
+    <link rel="stylesheet"
+          type="text/css"
+          href="/jqueryUI/common.css" />
+    <script type="text/javascript"
+            src="/js/jquery.js">
+    </script>
+    <script type="text/javascript"
+            src="/jqueryUI/jquery-ui.min.js">
+    </script>
+    <script type="text/javascript"
+            src="/js/resize.js">
+    </script>
+    <!-- <script type="text/javascript"
+      src="/js/draganddrop.js">
+     </script> -->
+
+    <title>AJAX Tabs</title>
+</head>
+<body>
+<div>
+    <p>
+        Resume: Upload either DOC, DOCX, PDF, RTF or TXT file types (2MB max)
+        <form action="/action_page.php">
+            <label for="myfile">Select file: </label>
+            <input type="file" id="myfile" name="myfile" multiple><br><br>
+        </form>
+    </p>
+    
+    <p>
+        How did you learn about the Job?
+    </p>
+        <style>
+            .ui-widget-content {
+                /* background: #cedc98; */
+                border: 1px solid #DDDDDD;
+                color: #333333;
+            }
+            #resizable { 
+                width: 200px; 
+                height: 30px; 
+                padding: 1.5em;
+                text-align: center; 
+                margin: 1; 
+            }
+         </style>
+         
+         <!-- Javascript -->
+         <script>
+            $(function() {
+                $( "#resizable" ).resizable({
+                    containment: "#container"
+                });
+            $( "#draggable" ).draggable({
+                containment: "#container"});
+        });
+         </script>
+   
+        <div id="container" class="ui-widget-content">
+            <span id="draggable">*  
+                <input type="text "id="resizable" class="ui-state-hover" value="Please edit your text here">
+            </span>
+        </div>
+
+    <!-- <span _ngcontent-pnn-c3="" class="btn applyGreenFill noBorderRadius" style="font-size:12px;padding:7px 12px;width:90px;">
+    <span _ngcontent-pnn-c3="" class="icon-span-filestyle glyphicon glyphicon-folder-open"></span>&nbsp;&nbsp;
+    Browse<input _ngcontent-pnn-c3="" class="ng-tns-c3-2 ng-untouched ng-pristine ng-invalid" accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document, 
+    text/plain, application/rtf" name="resume" required="" style="display:none" type="file"></span> -->
