@@ -10,7 +10,7 @@
 }
 
 .dragMe{
-    width: 50px;
+    width: 20%;
     height: 50px;
     border: 1px solid blue;
     text-align: center;
@@ -20,7 +20,7 @@
     padding-right: 10px;
 }
 .dragMe2{
-    width: 50px;
+    width: 20%;
     height: 50px;
     border: 1px solid blue;
     text-align: center;
@@ -31,7 +31,7 @@
 }
 
 #target {
-    width: 200px;
+    width: 50%;
     height: 50px;
     border: 1px solid red;
     text-align: center;
@@ -41,7 +41,8 @@
     z-index: 0;
 }
 .align{
-    display: flex
+    display: flex;
+    width: 50%;
 }
 
 #selectable .ui-selecting {

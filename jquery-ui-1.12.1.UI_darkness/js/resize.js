@@ -9,7 +9,7 @@ function init()
             .addClass("ui-corner-all");
     $(":header").addClass("ui-widget-header")
                 .addClass("ui-corner-all");
-                
+
     $("#selectable").selectable();
 
 //      cloneDragMe();
@@ -40,7 +40,7 @@ function cloneDragMe()
 function highlightTarget(event, ui)
 {
     $("#target").addClass("ui-state-highlight")
-                .html("Dropped ")
+                .html("Added")
                 .append(ui.draggable.text());
 } 
 
