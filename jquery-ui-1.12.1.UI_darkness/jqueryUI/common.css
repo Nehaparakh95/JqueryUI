@@ -43,3 +43,12 @@
 .align{
     display: flex
 }
+
+#selectable .ui-selecting {
+    background-color: blue;
+}
+
+#selectable .ui-selected {
+    background-color: whitesmoke;
+    color: gray;
+}

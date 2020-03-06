@@ -9,6 +9,8 @@ function init()
             .addClass("ui-corner-all");
     $(":header").addClass("ui-widget-header")
                 .addClass("ui-corner-all");
+                
+    $("#selectable").selectable();
 
 //      cloneDragMe();
       $(".dragMe").draggable();
